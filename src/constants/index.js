@@ -22,6 +22,10 @@ import {
   jobit,
   tripguide,
   threejs,
+  python,
+  tensorflow,
+  postgresql,
+  fastapi,
 } from "../assets";
 
 export const navLinks = [
@@ -60,16 +64,16 @@ const services = [
 
 const technologies = [
   {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
-  },
-  {
-    name: "JavaScript",
+    name: "Javascript",
     icon: javascript,
+  },
+  {
+    name: "Python",
+    icon: python,
+  },
+  {
+    name: "TensorFlow",
+    icon: tensorflow,
   },
   {
     name: "TypeScript",
@@ -80,12 +84,12 @@ const technologies = [
     icon: reactjs,
   },
   {
-    name: "Redux Toolkit",
-    icon: redux,
+    name: "PostgreSQL",
+    icon: postgresql,
   },
   {
-    name: "Tailwind CSS",
-    icon: tailwind,
+    name: "FastAPI",
+    icon: fastapi,
   },
   {
     name: "Node JS",
@@ -102,10 +106,6 @@ const technologies = [
   {
     name: "git",
     icon: git,
-  },
-  {
-    name: "figma",
-    icon: figma,
   },
   {
     name: "docker",
@@ -158,7 +158,7 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
+      "I thought it was impossible to make a website as beautiful as our product, but rishi proved me wrong.",
     name: "Sara Lee",
     designation: "CFO",
     company: "Acme Co",
@@ -166,7 +166,7 @@ const testimonials = [
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
+      "I've never met a web developer who truly cares about their clients' success like rishi does.",
     name: "Chris Brown",
     designation: "COO",
     company: "DEF Corp",
@@ -174,7 +174,7 @@ const testimonials = [
   },
   {
     testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
+      "After rishi optimized our website, our traffic increased by 50%. We can't thank them enough!",
     name: "Lisa Wang",
     designation: "CTO",
     company: "456 Enterprises",
@@ -193,7 +193,7 @@ const projects = [
       { name: "LLM", color: "pink-text-gradient" },
     ],
     image: carrent,
-    source_code_link: "https://github.com/Sikorsky3301",
+    source_code_link: "https://github.com/Sikorsky3301/Proclensai-geminiAI",
   },
   {
     name: "HRMS (Human Resource Management System)",
@@ -217,7 +217,7 @@ const projects = [
       { name: "TensorFlow", color: "pink-text-gradient" },
     ],
     image: tripguide,
-    source_code_link: "https://github.com/Sikorsky3301",
+    source_code_link: "https://github.com/Sikorsky3301/cars_and_peds_tracking",
   },
   {
     name: "Silo (AI Website Builder)",
@@ -229,7 +229,7 @@ const projects = [
       { name: "AWS", color: "pink-text-gradient" },
     ],
     image: carrent,
-    source_code_link: "https://github.com/Sikorsky3301",
+    source_code_link: "https://github.com/Sikorsky3301/Silo",
   },
 ];
 
