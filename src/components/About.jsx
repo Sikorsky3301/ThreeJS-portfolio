@@ -8,26 +8,24 @@ import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant, staggerContainer } from "../utils/motion";
 
 const ServiceCard = ({ index, title, icon }) => (
-  <Tilt className='xs:w-[250px] w-full'>
+  <Tilt
+    className="w-full max-w-[320px] sm:max-w-none mx-auto sm:mx-0"
+    options={{ max: 12, scale: 1.02, speed: 400 }}
+  >
     <motion.div
-      variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-      className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'
+      variants={fadeIn("up", "spring", index * 0.1, 0.6)}
+      className="overview-card-border w-full h-full"
     >
-      <div
-        options={{
-          max: 45,
-          scale: 1,
-          speed: 450,
-        }}
-        className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'
+      <div className="overview-card-inner py-6 px-5 sm:py-7 sm:px-8 min-h-[220px] sm:min-h-[260px] flex flex-col justify-center items-center gap-4 sm:gap-5"
       >
-        <img
-          src={icon}
-          alt='web-development'
-          className='w-16 h-16 object-contain'
-        />
-
-        <h3 className='text-white text-[20px] font-bold text-center'>
+        <div className="overview-card-icon-wrap flex-shrink-0">
+          <img
+            src={icon}
+            alt={title}
+            className="w-8 h-8 sm:w-9 sm:h-9 object-contain"
+          />
+        </div>
+        <h3 className="text-white text-base sm:text-lg font-bold text-center leading-snug">
           {title}
         </h3>
       </div>
@@ -45,7 +43,7 @@ const About = () => {
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
+        className="mt-4 text-secondary text-[15px] sm:text-[17px] max-w-3xl leading-relaxed sm:leading-[30px]"
       >
         I'm an AI & Full-Stack Developer building LLM-driven SaaS platforms,
         integrating real-time intelligence, scalable cloud systems, and modern
@@ -57,11 +55,11 @@ const About = () => {
       </motion.p>
 
       <motion.div
-        variants={staggerContainer(0.1, 0.1)}
-        initial='hidden'
-        whileInView='show'
-        viewport={{ once: true, amount: 0.1 }}
-        className='mt-20 flex flex-wrap gap-10 justify-center overflow-visible'
+        variants={staggerContainer(0.05, 0.1)}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: 0.15 }}
+        className="mt-14 sm:mt-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6 lg:gap-8 justify-items-center"
       >
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
