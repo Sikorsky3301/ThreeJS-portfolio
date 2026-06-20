@@ -45,13 +45,14 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[15px] sm:text-[17px] max-w-3xl leading-relaxed sm:leading-[30px]"
       >
-        I'm an AI & Full-Stack Developer building LLM-driven SaaS platforms,
-        integrating real-time intelligence, scalable cloud systems, and modern
-        web technologies. I work with Python, JavaScript, React, Node.js,
-        FastAPI, TensorFlow, and cloud platforms like AWS and Azure. From
-        STEAM education and data science to full-stack and AI solutions, I
-        focus on efficient, scalable systems. Let's work together to bring
-        your ideas to life!
+        AI Engineer with hands-on experience building production-grade Computer
+        Vision, Generative AI, and full-stack applications. I develop scalable
+        AI systems using FastAPI, Python, YOLO, TensorRT, and LangChain, with
+        expertise in multi-camera video analytics, person re-identification,
+        real-time inference pipelines, and containerized deployments. Strong
+        foundation in modular architecture, dependency injection, CI/CD, and
+        TDD — passionate about bridging AI research with real-world enterprise
+        applications.
       </motion.p>
 
       <motion.div

@@ -5,15 +5,10 @@ import {
   web,
   javascript,
   typescript,
-  html,
-  css,
   reactjs,
-  redux,
-  tailwind,
   nodejs,
   mongodb,
   git,
-  figma,
   docker,
   starbucks,
   tesla,
@@ -45,28 +40,24 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Full-Stack Developer",
-    icon: web,
-  },
-  {
-    title: "Machine Learning Development",
+    title: "Computer Vision & AI",
     icon: mobile,
   },
   {
-    title: "Backend & APIs",
-    icon: backend,
+    title: "Generative AI & LLMs",
+    icon: creator,
   },
   {
-    title: "Cloud Computing and Deployment",
-    icon: creator,
+    title: "Full-Stack Development",
+    icon: web,
+  },
+  {
+    title: "Cloud & DevOps",
+    icon: backend,
   },
 ];
 
 const technologies = [
-  {
-    name: "Javascript",
-    icon: javascript,
-  },
   {
     name: "Python",
     icon: python,
@@ -74,6 +65,10 @@ const technologies = [
   {
     name: "TensorFlow",
     icon: tensorflow,
+  },
+  {
+    name: "Javascript",
+    icon: javascript,
   },
   {
     name: "TypeScript",
@@ -84,10 +79,6 @@ const technologies = [
     icon: reactjs,
   },
   {
-    name: "PostgreSQL",
-    icon: postgresql,
-  },
-  {
     name: "FastAPI",
     icon: fastapi,
   },
@@ -96,61 +87,63 @@ const technologies = [
     icon: nodejs,
   },
   {
+    name: "PostgreSQL",
+    icon: postgresql,
+  },
+  {
     name: "MongoDB",
     icon: mongodb,
   },
   {
-    name: "Three JS",
-    icon: threejs,
+    name: "Docker",
+    icon: docker,
   },
   {
     name: "git",
     icon: git,
   },
   {
-    name: "docker",
-    icon: docker,
+    name: "Three JS",
+    icon: threejs,
   },
 ];
 
 const experiences = [
   {
-    title: "STEAM Trainer",
-    company_name: "Aerobay · Noida, India",
+    title: "AI Engineer",
+    company_name: "Uniconverge Technologies Pvt. Ltd. · Noida Sector 62",
     icon: starbucks,
     iconBg: "#383E56",
-    date: "Nov 2025 - Jan 2026",
+    date: "June 2025 – Present",
     points: [
-      "STEAM Trainer at GD Goenka Public School Shahjahanpur, specializing in hands-on STEM education, robotics, aeromodelling, and project-based learning.",
-      "Trained and mentored K–12 students in STEM/STEAM using robotics, drones, and aerospace kits; managed full-fledged STEM lab and safe usage of tools.",
-      "Designed project-based learning modules in robotics, 3D design, and aeromodelling; integrated Arduino, Raspberry Pi, and CAD (SolidWorks, CATIA).",
-      "Contributed to STEM outreach and events; tracked student performance and collaborated with teams to enhance curriculum and adopt new technologies.",
+      "Developed an AI-powered crack detection system for Indian Railway suspension springs using UV imaging, Python, OpenCV, and Computer Vision, automating inspection of 1000+ spring components.",
+      "Built a real-time defect monitoring and alert platform, reducing manual inspection time by up to 70% and improving maintenance efficiency.",
+      "Developed an AI-based Railway Inspection System detecting 25+ critical coach and bogie defects using Vision, Thermal, and Edge AI technologies.",
+      "Built an automated defect detection pipeline processing trains at speeds up to 100 km/h, reducing manual inspection effort and improving safety monitoring.",
+    ],
+  },
+  {
+    title: "Computer Vision / AI Engineer Intern",
+    company_name: "Uniconverge Technologies Pvt. Ltd. · Noida Sector 62",
+    icon: tesla,
+    iconBg: "#E6DEDD",
+    date: "March 2025 – June 2025",
+    points: [
+      "Jetsen Orion Nano: Designed a multi-camera object detection application processing 4 simultaneous feeds using NVIDIA TensorRT and YOLO with modular pipeline design and deployment-ready structuring.",
+      "MIRA Platform: Developed and integrated full-stack features including REST API endpoints, real-time data processing, and enterprise system integration using FastAPI and SQLAlchemy; applied dependency injection and TDD throughout.",
+      "Person ReID System: Built and containerized a cross-camera identity tracking application using Docker; implemented embedding-based similarity search with ResNet and YOLO-Pose; utilized CI/CD workflows for deployment.",
     ],
   },
   {
     title: "Data Science Intern",
     company_name: "SKOLAR Edtech · Bengaluru (Remote)",
-    icon: tesla,
-    iconBg: "#E6DEDD",
+    icon: shopify,
+    iconBg: "#383E56",
     date: "3 months · 2024",
     points: [
       "Collected, cleaned, and analyzed large datasets with Python (Pandas, NumPy); built and evaluated ML models using Scikit-learn and TensorFlow/PyTorch.",
       "Prepared reports and dashboards for decision-making; evaluated accuracy, precision, recall, F1-score and optimized hyperparameters.",
       "Collaborated with cross-functional teams to deploy AI solutions, automating 70% of manual data processes; used Azure for scalable training and deployment.",
-      "Learning: Python, TensorFlow, feature engineering, ML techniques, AWS, MLOps, data visualization.",
-    ],
-  },
-  {
-    title: "Data Analyst (Job Simulation)",
-    company_name: "Tata Group · Forage",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Oct 2025",
-    points: [
-      "Completed AI-powered data analytics and strategy simulation for Tata iQ Financial Services team.",
-      "Conducted EDA using GenAI tools to assess data quality, identify risk indicators and structure insights for predictive modelling.",
-      "Designed an AI-driven collections strategy with agentic AI and automation, incorporating ethical AI, regulatory compliance and scalable frameworks.",
-      "Learning: Python, AI & predictive analytics, data quality, AI strategy, GenAI tools, EDA.",
     ],
   },
 ];
@@ -158,78 +151,66 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but rishi proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+      "Rishi built our multi-camera person re-identification pipeline from the ground up. The modular architecture and TensorRT optimizations made it genuinely production-ready.",
+    name: "Arjun Mehta",
+    designation: "Engineering Lead",
+    company: "Uniconverge Technologies",
+    image: "https://randomuser.me/api/portraits/men/32.jpg",
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like rishi does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+      "The MIRA interview platform Rishi developed shows rare depth — solid FastAPI architecture, real enterprise patterns like dependency injection, and a polished React frontend.",
+    name: "Priya Sharma",
+    designation: "Senior Product Manager",
+    company: "TechVentures IN",
+    image: "https://randomuser.me/api/portraits/women/44.jpg",
   },
   {
     testimonial:
-      "After rishi optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+      "Rishi's Railway Inspection AI reduced our manual inspection overhead by 70%. Impressive work on real-time inference at scale under tight operational constraints.",
+    name: "Vikram Singh",
+    designation: "Operations Director",
+    company: "Rail Analytics Ltd.",
+    image: "https://randomuser.me/api/portraits/men/17.jpg",
   },
 ];
 
 const projects = [
   {
-    name: "ProcLens.ai",
+    name: "MIRA – AI Mock Interview Platform",
     description:
-      "AI-based real-time system monitoring application with an interactive dashboard using TypeScript and React. Monitor processes via LLM; optimized data streaming reduced dashboard latency by 30%. Stack: TypeScript, React, Vite, Express.js, REST APIs, Ollama, Gemini API.",
+      "Full-stack enterprise web app with real-time interview orchestration and adaptive question generation. JWT auth, tokenized subscriptions, resume parsing, ATS-style skill extraction, and browser-side proctoring via TensorFlow.js. Scalable data layer with SQLAlchemy + MySQL.",
     tags: [
-      { name: "TypeScript", color: "blue-text-gradient" },
-      { name: "React", color: "green-text-gradient" },
-      { name: "LLM", color: "pink-text-gradient" },
+      { name: "FastAPI", color: "blue-text-gradient" },
+      { name: "LangChain", color: "green-text-gradient" },
+      { name: "React 19", color: "pink-text-gradient" },
     ],
     image: carrent,
-    source_code_link: "https://github.com/Sikorsky3301/Proclensai-geminiAI",
-  },
-  {
-    name: "HRMS (Human Resource Management System)",
-    description:
-      "Lightweight, production-ready HRMS to manage employee records and daily attendance with a clean, responsive UI. RESTful APIs with Node.js (Express) and optional FastAPI backend; PostgreSQL (Supabase); attendance tracking and dashboard. Deployed on Render and Vercel.",
-    tags: [
-      { name: "React 19", color: "blue-text-gradient" },
-      { name: "FastAPI", color: "green-text-gradient" },
-      { name: "PostgreSQL", color: "pink-text-gradient" },
-    ],
-    image: jobit,
     source_code_link: "https://github.com/Sikorsky3301",
   },
   {
-    name: "Cars and Pedestrian Detection System",
+    name: "Silo – AI Full-Stack App Generator",
     description:
-      "Real-time detection system using YOLO, OpenCV, and TensorFlow to identify and track pedestrians and vehicles from live video. Fine-tuned YOLO weights; database module for detection results; optimized for real-time inference on edge devices. Stack: Python, YOLO, OpenCV, TensorFlow, PostgreSQL.",
+      "Prompt-driven SaaS that converts natural language into fully functional Next.js apps, cutting prototyping time by 80%+. Autonomous agent pipeline using GPT-4.1, Inngest, and E2B Sandboxes for live code generation, dependency install, and hot-reload previews.",
     tags: [
-      { name: "Python", color: "blue-text-gradient" },
-      { name: "YOLO", color: "green-text-gradient" },
-      { name: "TensorFlow", color: "pink-text-gradient" },
+      { name: "Next.js 15", color: "blue-text-gradient" },
+      { name: "GPT-4.1", color: "green-text-gradient" },
+      { name: "tRPC", color: "pink-text-gradient" },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/Sikorsky3301/cars_and_peds_tracking",
+    image: jobit,
+    source_code_link: "https://github.com/Sikorsky3301/Silo",
   },
   {
-    name: "Silo (AI Website Builder)",
+    name: "CrossCamReID – Multi-Camera ReID",
     description:
-      "Prompt-driven SaaS that generates production-ready websites/apps from natural-language specs. Converts prompts into data models, API routes, and typed UI; Inngest for background job orchestration; live preview with TanStack Query; tRPC + Zod + SuperJSON; Radix UI, Tailwind v4. Stack: Next.js 15, React 19, TypeScript, Prisma, Docker, AWS.",
+      "Real-time distributed analytics system for multi-camera people tracking with global identity memory and dwell-time analytics. Session-aware FastAPI + WebSocket backend for low-latency streaming, occupancy monitoring, and threshold-based alerting. GPU edge deployment via Docker.",
     tags: [
-      { name: "Next.js", color: "blue-text-gradient" },
-      { name: "tRPC", color: "green-text-gradient" },
-      { name: "AWS", color: "pink-text-gradient" },
+      { name: "TensorRT", color: "blue-text-gradient" },
+      { name: "ByteTrack", color: "green-text-gradient" },
+      { name: "FastAPI", color: "pink-text-gradient" },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/Sikorsky3301/Silo",
+    image: tripguide,
+    source_code_link: "https://github.com/Sikorsky3301",
   },
 ];
 
